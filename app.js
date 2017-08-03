@@ -13,7 +13,7 @@ var socketio = require('socket.io');
 // templating boilerplate setup
 app.engine('html', nunjucks.render); // how to render html templates
 app.set('view engine', 'html'); // what file extension do our templates have
-+nunjucks.configure('views', { noCache: true }); // where to find the views, caching off
+nunjucks.configure('views', { noCache: true }); // where to find the views, caching off
 
 // logging middleware
 app.use(morgan('dev'));
